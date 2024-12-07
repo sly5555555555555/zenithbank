@@ -1,0 +1,137 @@
+#logo h1,
+#logo h2,
+#mobile-logo h1 {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: normal;
+    color: #222;
+    font-size: 24px;
+}
+
+body,
+p,
+nav .shopping-bag {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+h1,
+.impact-text,
+.impact-text>p,
+.impact-text-large,
+.impact-text-large>p,
+h3.countdown-subject,
+.swiper-slide .caption-content>h2,
+#jckqv h1 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 80px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+}
+
+h2,
+.blog-item .quote-excerpt {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3,
+.cpb-row-expand-text,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.single_variation_wrap .single_variation span.price {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+h4 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+h5 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+h6 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 11px;
+}
+
+#main-nav,
+#header nav,
+.vertical-menu nav,
+.header-9#header-section #main-nav,
+#overlay-menu nav,
+#mobile-menu,
+#one-page-nav li .hover-caption,
+.mobile-search-form input[type="text"] {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 48em) {
+    .mylivechat_inline {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important
+    }
+}
+
+.dealsitems span.discount {
+    display: none !important;
+}
+
+.post-7017 .cpb-row-container.cpb-row-content-width.col-sm-12.related-links.remove-element-spacing.col-natural {
+    background-color: #e3e3e3c2 !important;
+}
+
+.cpb-asset-content>h2 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.fancy-style .fancy-heading .heading-text>h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px;
+}
+
+.cpb-asset-content>h1 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.post-1472.page section.row.seeAccordionLargeWithFiles.seeAccordionCategories {
+    pointer-events: none;
+}

